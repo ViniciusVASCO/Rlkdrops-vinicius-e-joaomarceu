@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.projetointegrador.controllers.CadastrarVenda">
+   <children>
+      <ComboBox fx:id="cbVendedor" layoutX="88.0" layoutY="121.0" prefWidth="150.0" />
+      <ComboBox fx:id="cbCliente" layoutX="81.0" layoutY="164.0" prefWidth="150.0" />
+      <Label layoutX="33.0" layoutY="125.0" text="Vendedor;" />
+      <Label layoutX="41.0" layoutY="168.0" text="Cliente:" />
+      <Label layoutX="268.0" layoutY="35.0" text="VENDA">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="501.0" layoutY="344.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="31.0" prefWidth="67.0" text="Cadastrar" />
+      <Button layoutX="416.0" layoutY="344.0" mnemonicParsing="false" onAction="#voltar" prefHeight="31.0" prefWidth="67.0" text="Voltar" />
+      <TableView fx:id="tbTenis" layoutX="263.0" layoutY="121.0" prefHeight="200.0" prefWidth="305.0">
+        <columns>
+          <TableColumn fx:id="tcTenis" prefWidth="75.0" text="Tênis" />
+          <TableColumn fx:id="tcMarca" prefWidth="75.0" text="Marca" />
+            <TableColumn fx:id="tcEstoque" prefWidth="75.0" text="Estoque" />
+            <TableColumn fx:id="tcValor" prefWidth="75.0" text="Valor" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
