@@ -1,11 +1,14 @@
 package vinicius.joaomarceu.controllers;
+
+
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
+
 import vinicius.joaomarceu.App;
 import vinicius.joaomarceu.model.entities.Cliente;
-import vinicius.joaomarceu.model.repositories.RepositorioCliente;
+import vinicius.joaomarceu.repositories.RepositorioCliente;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -15,6 +18,8 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TextArea;
 import javafx.scene.input.MouseEvent;
+
+import com.github.hugoperlin.results.Resultado;
 
 public class ListarCliente implements Initializable {
 

@@ -1,5 +1,7 @@
 package vinicius.joaomarceu.utils;
 
+import io.github.cdimascio.dotenv.Dotenv;
+
 public class Env {
 
     private static Dotenv dotenv;

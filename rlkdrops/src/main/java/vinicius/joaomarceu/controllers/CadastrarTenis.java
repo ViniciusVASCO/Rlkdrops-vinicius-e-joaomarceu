@@ -4,10 +4,8 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
-import vinicius.joaomarceu.App;
-import vinicius.joaomarceu.model.entities.Categoria;
-import vinicius.joaomarceu.model.repositories.RepositorioCategoria;
-import vinicius.joaomarceu.model.repositories.RepositorioTenis;
+import com.github.hugoperlin.results.Resultado;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -16,6 +14,10 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import vinicius.joaomarceu.App;
+import vinicius.joaomarceu.model.entities.Categoria;
+import vinicius.joaomarceu.repositories.RepositorioCategoria;
+import vinicius.joaomarceu.repositories.RepositorioTenis;
 
 public class CadastrarTenis implements Initializable {
 

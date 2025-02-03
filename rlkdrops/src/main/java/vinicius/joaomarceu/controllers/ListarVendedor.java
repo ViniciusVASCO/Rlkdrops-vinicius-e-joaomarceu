@@ -5,7 +5,7 @@ import java.util.ResourceBundle;
 
 import vinicius.joaomarceu.App;
 import vinicius.joaomarceu.model.entities.Vendedor;
-import vinicius.joaomarceu.model.repositories.RepositorioVendedor;
+import vinicius.joaomarceu.repositories.RepositorioVendedor;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -14,6 +14,8 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.input.MouseEvent;
+
+import com.github.hugoperlin.results.Resultado;
 
 public class ListarVendedor implements Initializable{
 

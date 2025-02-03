@@ -1,6 +1,9 @@
 package vinicius.joaomarceu;
 
+import io.github.hugoperlin.navigatorfx.BaseAppNavigator;
+import io.github.hugoperlin.navigatorfx.ScreenRegistryFXML;
 import vinicius.joaomarceu.controllers.CadastrarCategoria;
+import vinicius.joaomarceu.controllers.CadastrarCliente;
 import vinicius.joaomarceu.controllers.CadastrarTenis;
 import vinicius.joaomarceu.controllers.CadastrarVenda;
 import vinicius.joaomarceu.controllers.CadastrarVendedor;

@@ -1,5 +1,7 @@
 package vinicius.joaomarceu.repositories;
 
+import com.github.hugoperlin.results.Resultado;
+
 import vinicius.joaomarceu.daos.CategoriaDao;
 import vinicius.joaomarceu.model.entities.Categoria;
 

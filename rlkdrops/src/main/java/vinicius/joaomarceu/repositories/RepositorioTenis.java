@@ -7,6 +7,8 @@ import vinicius.joaomarceu.daos.TenisDao;
 import vinicius.joaomarceu.model.entities.Categoria;
 import vinicius.joaomarceu.model.entities.Tenis;
 
+import com.github.hugoperlin.results.Resultado;
+
 public class RepositorioTenis {
     private TenisDao dao;
     private CategoriaDao categoriaDao;

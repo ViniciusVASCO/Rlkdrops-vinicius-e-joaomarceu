@@ -1,12 +1,14 @@
 package vinicius.joaomarceu.controllers;
 import vinicius.joaomarceu.App;
-import vinicius.joaomarceu.model.repositories.RepositorioCategoria;
+import vinicius.joaomarceu.repositories.RepositorioCategoria;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
+
+import com.github.hugoperlin.results.Resultado;
 
 public class CadastrarCategoria {
 

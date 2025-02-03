@@ -10,6 +10,8 @@ import vinicius.joaomarceu.model.entities.Tenis;
 import vinicius.joaomarceu.model.entities.Venda;
 import vinicius.joaomarceu.model.entities.Vendedor;
 
+import com.github.hugoperlin.results.Resultado;
+
 public class RepositorioVenda {
 
     private VendaDao vendaDao;

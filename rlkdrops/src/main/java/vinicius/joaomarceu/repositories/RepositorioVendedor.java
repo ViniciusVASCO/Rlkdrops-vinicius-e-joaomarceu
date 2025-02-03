@@ -1,7 +1,8 @@
 package vinicius.joaomarceu.repositories;
 
+import com.github.hugoperlin.results.Resultado;
+
 import vinicius.joaomarceu.daos.VendedorDao;
-import vinicius.joaomarceu.model.entities.Cliente;
 import vinicius.joaomarceu.model.entities.Vendedor;
 
 public class RepositorioVendedor {

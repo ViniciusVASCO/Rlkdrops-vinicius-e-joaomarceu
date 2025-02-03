@@ -4,15 +4,8 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
-import vinicius.joaomarceu.App;
-import vinicius.joaomarceu.model.entities.Categoria;
-import vinicius.joaomarceu.model.entities.Cliente;
-import vinicius.joaomarceu.model.entities.Tenis;
-import vinicius.joaomarceu.model.entities.Vendedor;
-import vinicius.joaomarceu.model.repositories.RepositorioCliente;
-import vinicius.joaomarceu.model.repositories.RepositorioTenis;
-import vinicius.joaomarceu.model.repositories.RepositorioVenda;
-import vinicius.joaomarceu.model.repositories.RepositorioVendedor;
+import com.github.hugoperlin.results.Resultado;
+
 import javafx.beans.property.SimpleStringProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -23,6 +16,14 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import vinicius.joaomarceu.App;
+import vinicius.joaomarceu.model.entities.Cliente;
+import vinicius.joaomarceu.model.entities.Tenis;
+import vinicius.joaomarceu.model.entities.Vendedor;
+import vinicius.joaomarceu.repositories.RepositorioCliente;
+import vinicius.joaomarceu.repositories.RepositorioTenis;
+import vinicius.joaomarceu.repositories.RepositorioVenda;
+import vinicius.joaomarceu.repositories.RepositorioVendedor;
 
 public class CadastrarVenda implements Initializable{
 

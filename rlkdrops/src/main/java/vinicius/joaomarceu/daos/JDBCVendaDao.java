@@ -7,6 +7,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import com.github.hugoperlin.results.Resultado;
+
 import vinicius.joaomarceu.model.entities.Tenis;
 import vinicius.joaomarceu.model.entities.Venda;
 

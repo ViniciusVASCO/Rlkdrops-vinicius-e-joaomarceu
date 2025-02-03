@@ -1,12 +1,14 @@
 package vinicius.joaomarceu.controllers;
 
-import vinicius.joaomarceu.App;
-import vinicius.joaomarceu.model.repositories.RepositorioVendedor;
+import com.github.hugoperlin.results.Resultado;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.TextField;
+import vinicius.joaomarceu.App;
+import vinicius.joaomarceu.repositories.RepositorioVendedor;
 
 public class CadastrarVendedor {
 

@@ -7,7 +7,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-import  vinicius.joaomarceu.model.entities.Categoria;
+import  com.github.hugoperlin.results.Resultado;
+
+import vinicius.joaomarceu.model.entities.Categoria;
+
 
 public class JDBCCategoriaDao implements CategoriaDao {
 

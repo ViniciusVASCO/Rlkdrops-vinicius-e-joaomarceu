@@ -2,13 +2,14 @@ package vinicius.joaomarceu;
 
 
 import java.util.List;
-import com.mysql.cj.xdevapi.Client;
+
+import com.github.hugoperlin.results.Resultado;
 
 import vinicius.joaomarceu.daos.CategoriaDao;
 import vinicius.joaomarceu.daos.ClienteDao;
 import vinicius.joaomarceu.daos.FabricaConexoes;
-import vinicius.joaomarceu.daos.JDBCClienteDao;
 import vinicius.joaomarceu.daos.JDBCCategoriaDao;
+import vinicius.joaomarceu.daos.JDBCClienteDao;
 import vinicius.joaomarceu.daos.JDBCTenisDao;
 import vinicius.joaomarceu.daos.JDBCVendedorDao;
 import vinicius.joaomarceu.daos.TenisDao;

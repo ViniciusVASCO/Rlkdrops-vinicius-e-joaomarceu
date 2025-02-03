@@ -3,17 +3,19 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
-import vinicius.joaomarceu.App;
-import vinicius.joaomarceu.model.entities.Categoria;
-import vinicius.joaomarceu.model.repositories.RepositorioCategoria;
+import com.github.hugoperlin.results.Resultado;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
+import javafx.scene.input.MouseEvent;
+import vinicius.joaomarceu.App;
+import vinicius.joaomarceu.model.entities.Categoria;
+import vinicius.joaomarceu.repositories.RepositorioCategoria;
 
 public class ListarCategoria implements Initializable{
 

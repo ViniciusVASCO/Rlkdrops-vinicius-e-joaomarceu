@@ -6,9 +6,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import  vinicius.joaomarceu.model.entities.Categoria;
+import  com.github.hugoperlin.results.Resultado;
+
 import  vinicius.joaomarceu.model.entities.Cliente;
-import  vinicius.joaomarceu.model.entities.Vendedor;
 
 public class JDBCClienteDao implements ClienteDao {
 

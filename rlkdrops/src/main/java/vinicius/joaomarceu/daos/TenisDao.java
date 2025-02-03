@@ -1,5 +1,7 @@
 package vinicius.joaomarceu.daos;
 
+import com.github.hugoperlin.results.Resultado;
+
 import vinicius.joaomarceu.model.entities.Tenis;
 
 public interface TenisDao {
