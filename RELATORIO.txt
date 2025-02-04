@@ -1,0 +1,64 @@
+Relatório Semanal de Desenvolvimento do Sistema para Loja de tênis
+Semana 1: Adaptação do Código e Estruturação do Projeto.
+
+Objetivos da Semana:
+Analisar o código existente que seria utilizado como base.
+Definir as adaptações necessárias para atender aos requisitos do projeto.
+Estruturar o banco de dados e iniciar o desenvolvimento das telas principais.
+
+Atividades Realizadas:
+Análise do Código Existente:
+O código salvo como teste foi revisado para entender suas funcionalidades e limitações. Identificamos as áreas que
+precisavam ser ajustadas para se adequar ao novo sistema.
+
+Planejamento da Estrutura:
+Definimos as telas que o sistema precisaria: cadastro de tênis, vendedor, vendas, categoria e clientes.
+Elaboramos o modelo do banco de dados, criando tabelas para tênis, clientes, categoria, vendas e vendedor.
+Criação do Banco de Dados:
+
+Modelagem do banco usando diagramas ER.
+Implementação inicial das tabelas no banco de dados.
+
+Desenvolvimento das Primeiras Telas:
+Iniciamos o desenvolvimento das telas de Cadastro de tênis e categoria.
+Implementação de formulários básicos para inserção de dados no banco.
+
+Desafios da Semana:
+Adaptação do código para o novo sistema foi mais complexa do que o esperado, exigindo várias mudanças na estrutura de dados.
+Problemas de compatibilidade entre o código antigo e as novas funcionalidades.
+
+Semana 2: Finalização das Funcionalidades e Testes.
+
+Objetivos da Semana:
+Finalizar o desenvolvimento das telas restantes.
+Integrar todas as funcionalidades do sistema.
+Realizar testes completos para garantir o bom funcionamento.
+Preparar os diagramas finais e documentação.
+
+Atividades Realizadas:
+Desenvolvimento das Telas Finais:
+Tela de Gerenciamento de Vendas: Permite registrar vendas, calcular valores automaticamente e atualizar o estoque.
+Cadastro de Clientes: Desenvolvida para registrar e gerenciar informações de clientes.
+Integração do Sistema:
+
+Conectamos todas as telas ao banco de dados.
+Criamos a lógica para atualização automática do estoque após cada venda.
+Implementamos verificações para evitar erros como vendas de produtos sem estoque.
+Testes e Validação:
+
+Testes de inserção, atualização e exclusão de dados em todas as telas.
+Simulação de vendas para garantir que o estoque fosse atualizado corretamente.
+Testes de usabilidade para garantir que o sistema fosse intuitivo e fácil de usar.
+Documentação e Diagramas:
+
+Finalização dos diagramas de fluxo e de entidade-relacionamento.
+Preparação da documentação para entrega, explicando o funcionamento do sistema.
+Desafios da Semana:
+
+Encontramos problemas de sincronização entre a atualização do estoque e o registro de vendas, que exigiram ajustes na lógica do código.
+A otimização da interface para torná-la mais amigável também demandou mais tempo do que o planejado.
+Resultados:
+
+Sistema completo, funcional e testado.
+Todos os critérios propostos pelo projeto foram atendidos.
+Documentação e diagramas prontos para entrega.

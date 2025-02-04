@@ -80,7 +80,7 @@ public class CadastrarVenda implements Initializable{
         }else{
             tbTenis.getSelectionModel().clearSelection();
             alert = new Alert(AlertType.INFORMATION,msg);
-            
+
         }
 
         alert.showAndWait();
@@ -116,7 +116,7 @@ public class CadastrarVenda implements Initializable{
         Resultado r1 = repositorioVendedor.listarVendedor();
         if(r1.foiSucesso()){
             List<Vendedor> lista = (List)r1.comoSucesso().getObj();
-            cbVendedor.getItems().addAll(lista);   
+            cbVendedor.getItems().addAll(lista);
         }
         else{
             Alert alert = new Alert(AlertType.ERROR,r1.getMsg());

@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vinicius.joaomarceu.controllers.ListarVendedor">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vinicius.joaomarceu.controllers.ListarVendedor">
    <children>
       <ListView fx:id="lstVendedor" layoutX="20.0" layoutY="19.0" onMouseClicked="#exibirDetalhes" prefHeight="363.0" prefWidth="228.0" />
       <Button layoutX="480.0" layoutY="355.0" mnemonicParsing="false" onAction="#voltar" prefHeight="31.0" prefWidth="65.0" text="Voltar" />
