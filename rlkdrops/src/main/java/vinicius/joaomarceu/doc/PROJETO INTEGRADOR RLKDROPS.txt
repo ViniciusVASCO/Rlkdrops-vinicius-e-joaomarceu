@@ -1,0 +1,73 @@
+﻿PROJETO INTEGRADOR RLKDROPS
+Vinicius Angelo e João Marceu
+
+estruturas SQL usadas no projeto RLKDROPS
+
+Tabelas:
+CREATE TABLE `tca_Cliente` (
+  `cpf_cliente` varchar(11) NOT NULL,
+  `Nome_cliente` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO `tca_Cliente` (`cpf_cliente`, `Nome_cliente`) VALUES
+
+CREATE TABLE `tca_Marca` (
+  `id_marca` int NOT NULL,
+  `Nome_marca` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `Descricao_marca` varchar(2000) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO `tca_Marca` (`id_marca`, `Nome_marca`, `Descricao_marca`) VALUES
+
+CREATE TABLE `tca_Tenis` (
+  `id_tenis` int NOT NULL,
+  `Nome_tenis` varchar(45) NOT NULL,
+  `Descricao_tenis` varchar(255) DEFAULT NULL,
+  `Estoque_tenis` int NOT NULL,
+  `Valor_tenis` float NOT NULL,
+  `id_marca` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO `tca_Tenis` (`id_tenis`, `Nome_tenis`, `Descricao_tenis`, `Estoque_tenis`, `Valor_tenis`, `id_marca`) VALUES
+CREATE TABLE `tca_Venda_Tenis` (
+  `id_venda` int NOT NULL,
+  `id_tenis` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO `tca_Venda_Tenis` (`id_venda`, `id_tenis`) VALUES
+
+CREATE TABLE `tca_Venda` (
+  `id_venda` int NOT NULL,
+  `cpf_cliente` varchar(11) NOT NULL,
+  `Cpf_vendedor` varchar(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO `tca_Venda` (`id_venda`, `cpf_cliente`, `Cpf_vendedor`) VALUES
+
+CREATE TABLE `tca_Vendedor` (
+  `Cpf_vendedor` varchar(11) NOT NULL,
+  `Nome_vendedor` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO `tca_Vendedor` (`Cpf_vendedor`, `Nome_vendedor`) VALUES
+
+VIEW:
+CREATE ALGORITHM=UNDEFINED DEFINER=`info22_vinicius`@`%` SQL SECURITY DEFINER VIEW `tca_ClienteView`  AS  select `tca_Cliente`.`Nome_cliente` AS `Nome`,`tca_Cliente`.`cpf_cliente` AS `CPF` from `tca_Cliente` ;
+
+TRIGGER:
+DELIMITER $$
+CREATE TRIGGER `validaCPF_tca_Cliente` BEFORE INSERT ON `tca_Cliente` FOR EACH ROW BEGIN
+    DECLARE msg VARCHAR(255);
+
+
+    SET NEW.cpf_cliente = REPLACE(NEW.cpf_cliente, '-', '');
+    SET NEW.cpf_cliente = REPLACE(NEW.cpf_cliente, '.', '');
+
+
+    IF LENGTH(NEW.cpf_cliente) != 11 OR NOT NEW.cpf_cliente REGEXP '^[0-9]+$' THEN
+        SET msg = 'CPF inválido. Por favor, insira um CPF válido.';
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = msg;
+    END IF;
+END
+$$
+DELIMITER ;
