@@ -36,29 +36,27 @@ Realizar testes completos para garantir o bom funcionamento.
 Preparar os diagramas finais e documentação.
 
 Atividades Realizadas:
-Desenvolvimento das Telas Finais:
-Tela de Gerenciamento de Vendas: Permite registrar vendas, calcular valores automaticamente e atualizar o estoque.
+Desenvolvimento das Telas Finais:Tela de Gerenciamento de Vendas: Permite registrar vendas, calcular valores automaticamente
+e atualizar o estoque.
 Cadastro de Clientes: Desenvolvida para registrar e gerenciar informações de clientes.
-Integração do Sistema:
-
-Conectamos todas as telas ao banco de dados.
+Integração do Sistema: Conectamos todas as telas ao banco de dados.
 Criamos a lógica para atualização automática do estoque após cada venda.
 Implementamos verificações para evitar erros como vendas de produtos sem estoque.
-Testes e Validação:
 
+Testes e Validação:
 Testes de inserção, atualização e exclusão de dados em todas as telas.
 Simulação de vendas para garantir que o estoque fosse atualizado corretamente.
 Testes de usabilidade para garantir que o sistema fosse intuitivo e fácil de usar.
+
 Documentação e Diagramas:
-
-Finalização dos diagramas de fluxo e de entidade-relacionamento.
+Finalização dos diagramas de casos de uso e relacional.
 Preparação da documentação para entrega, explicando o funcionamento do sistema.
-Desafios da Semana:
 
+Desafios da Semana:
 Encontramos problemas de sincronização entre a atualização do estoque e o registro de vendas, que exigiram ajustes na lógica do código.
 A otimização da interface para torná-la mais amigável também demandou mais tempo do que o planejado.
-Resultados:
 
+Resultados:
 Sistema completo, funcional e testado.
 Todos os critérios propostos pelo projeto foram atendidos.
 Documentação e diagramas prontos para entrega.
