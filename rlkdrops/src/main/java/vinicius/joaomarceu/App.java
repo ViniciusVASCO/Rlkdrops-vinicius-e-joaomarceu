@@ -90,8 +90,7 @@ public class App extends BaseAppNavigator {
 
         registraTela("VENDEDOR", new ScreenRegistryFXML(App.class, "vendedor.fxml", o -> new VendedorTela()));
         registraTela("CADASTRARVENDEDOR", new ScreenRegistryFXML(App.class, "cadastrar_vendedor.fxml", o -> new CadastrarVendedor(repositorioVendedor)));
-        registraTela("LISTARVENDEDOR", new ScreenRegistryFXML(App.class, "listar_vendedor.fxml", o -> new ListarVendedor(repositorioVendedor)));
-
+        registraTela("LISTARVENDEDOR", new ScreenRegistryFXML(App.class, "listrar_vendedor.fxml", o-> new ListarVendedor(repositorioVendedor)));
         registraTela("VENDA", new ScreenRegistryFXML(App.class, "venda.fxml", o-> new CadastrarVenda(repositorioVenda, repositorioVendedor, repositorioCliente, repositorioTenis)));
     }
 

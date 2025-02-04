@@ -13,7 +13,7 @@ public class testeConexao {
                     System.out.println("Conexão com o banco de dados estabelecida com sucesso!");
                 }
             } catch (SQLException e) {
-                // Log com mais informações sobre o erro
+
                 System.err.println("Erro ao conectar ao banco de dados: " + e.getMessage());
                 System.err.println("Código de erro: " + e.getErrorCode());
                 System.err.println("SQLState: " + e.getSQLState());
